@@ -856,16 +856,18 @@ config SENSORS_CORETEMP
 	  are supported. Check Documentation/hwmon/coretemp.rst for details.
 
 config SENSORS_IT87
-	tristate "ITE IT87xx and compatibles"
+	tristate "ITE IT87xx, IT86xx, and compatible sensors"
 	depends on HAS_IOPORT
 	depends on !PPC
 	select HWMON_VID
 	help
-	  If you say yes here you get support for ITE IT8705F, IT8712F, IT8716F,
-	  IT8718F, IT8720F, IT8721F, IT8726F, IT8728F, IT8732F, IT8758E,
-	  IT8771E, IT8772E, IT8781F, IT8782F, IT8783E/F, IT8786E, IT8790E,
-	  IT8603E, IT8620E, IT8623E, and IT8628E sensor chips, and the SiS950
-	  clone.
+	  If you say yes here, you get support for the ITE IT8603E, IT8606E,
+	  IT8607E, IT8613E, IT8620E, IT8622E, IT8623E, IT8625E, IT8628E,
+	  IT8655E, IT8665E, IT8686E, IT8688E, IT8689E, IT8705F, IT8712F,
+	  IT8716F, IT8718F, IT8720F, IT8721F, IT8726F, IT8728F, IT8732F,
+	  IT8736F, IT8738E, IT8758E, IT8771E, IT8772E, IT8781F, IT8782F,
+	  IT8783E/F, IT8786E, IT8790E, IT8792E, and IT87952E sensor chips,
+	  and the SiS950 clone.
 
 	  This driver can also be built as a module. If so, the module
 	  will be called it87.
